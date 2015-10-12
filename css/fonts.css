@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'BlissPro';
+  src: url('fonts/BlissPro.eot');
+  src: url('fonts/BlissPro.eot?#iefix') format('embedded-opentype'), url('fonts/BlissPro.woff') format('woff'), url('fonts/BlissPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BlissPro Bold';
+  src: url('fonts/BlissProBold.eot');
+  src: url('fonts/BlissProBold.eot?#iefix') format('embedded-opentype'), url('fonts/BlissProBold.woff') format('woff'), url('fonts/BlissProBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BlissPro Extra light';
+  src: url('fonts/BlissProExtralight.eot');
+  src: url('fonts/BlissProExtralight.eot?#iefix') format('embedded-opentype'), url('fonts/BlissProExtralight.woff') format('woff'), url('fonts/BlissProExtralight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AA Bebas Neue';
+  src: url('fonts/aa-bebasneue-webfont.eot');
+  src: url('fonts/aa-bebasneue-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/aa-bebasneue-webfont.woff') format('woff'), url('fonts/aa-bebasneue-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cuprum';
+  src: url('fonts/cuprum-webfont.eot');
+  src: url('fonts/cuprum-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/cuprum-webfont.woff') format('woff'), url('fonts/cuprum-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansCondensedLight';
+  src: url('fonts/OpenSansCondensedLight.eot');
+  src: url('fonts/OpenSansCondensedLight.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSansCondensedLight.woff') format('woff'), url('fonts/OpenSansCondensedLight.ttf') format('truetype'), url('fonts/OpenSansCondensedLight.svg#OpenSansCondensedLight') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>Акции — Клуб путешествий</title>
+
+	<link rel="shortcut icon" href="favicon.png">
+
+	<!-- Reset styles -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!-- Plugins' styles -->
+	<link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+	<link rel="stylesheet" href="js/vendor/magnific-popup/magnific-popup.min.css">
+	<link rel="stylesheet" href="js/vendor/magnific-popup/magnific-popup.min.css">
+	<link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.structure.min.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+	<!-- Main styles -->
+	<link rel="stylesheet" href="template_styles.css">
+
+	<!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
+
+	<!-- Scripts -->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/fastclick.min.js"></script>
+	<script src="js/vendor/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="js/vendor/jquery-maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+	<script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/vendor/select-or-die/selectordie.min.js"></script>
+	<script src="js/vendor/jquery-validation/jquery.validate.min.js"></script>
+	<script src="js/vendor/jquery-validation/localization/messages_ru.js"></script>
+	<script src="js/vendor/masonry.pkgd.min.js"></script>
+	<script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+
+<body style="background: url('img/egypt.png') no-repeat top center">
+
+	<div class="l-page">
+
+        <div class="pop-up-menu pop-up-modal" id="pop-up-menu">
+            <div class="grid-container">
+
+                <div class="grid">
+                    <div class="anim"></div>
+                </div>
+
+            </div>
+            <!-- /.grid-container -->
+
+            <div class="window">
+
+                <div class="close mfp-close"></div>
+                <div class="logo"></div>
+                <div class="tel">т. +7 (8182) 53-33-03</div>
+                <span>адрес: г.Архангельск, ул. Карла-Маркса, д. 20а</span>
+
+            </div>
+        </div>
+        <!-- /.pop-up-menu -->
+
+        <div class="pop-up-phone pop-up-modal" id="pop-up-phone">
+            <div class="grid-container">
+
+                <div class="grid">
+                    <div class="anim"></div>
+                </div>
+
+            </div>
+            <!-- /.grid-container -->
+
+            <div class="window">
+                <div class="close mfp-close"></div>
+                <div class="logo"></div>
+                <span>Введите Ваш номер и нажмите заказать! С вами свяжутся в ближайшее время.</span>
+
+                <form>
+                    <label>
+                        <input type="tel" placeholder="+7">
+                    </label>
+                    <input type="submit" class="btn-orange" value="Заказать звонок">
+                </form>
+
+            </div>
+        </div>
+
+        <div class="pop-up-mail pop-up-modal" id="pop-up-mail">
+            <div class="grid-container">
+
+                <div class="grid">
+                    <div class="anim"></div>
+                </div>
+
+            </div>
+            <!-- /.grid-container -->
+
+            <div class="window">
+                <div class="close mfp-close"></div>
+
+                <form>
+                    <label>
+                        <input type="text" placeholder="Представьтесь, пожалуйста">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="* Введите Ваш e-mail">
+                    </label>
+                    <label>
+                        <textarea placeholder="* Введите Ваше сообщение"></textarea>
+                    </label>
+                    <input type="submit" class="btn-orange" value="Отправить сообщение">
+                </form>
+
+            </div>
+        </div>
+
+		<header class="b-header">
+
+			<div class="b-header__left">
+
+				<a class="b-logo" href="home.html"></a>
+
+				<div class="b-header__info b-header__info--home">
+
+					<div class="b-header__phone">
+						+7 (8182) 53-33-03
+					</div>
+
+					<div class="b-header__location">
+						адрес: г. Архангельск, <br>
+						ул. Карла-Маркса, д. 20а
+					</div>
+
+				</div>
+
+			</div><!-- .b-header__left -->
+
+
+
+			<div class="b-header__right">
+
+				<ul class="b-btn-list">
+
+					<li class="b-btn-list__item">
+						<a class="b-btn-round b-btn-round--menu open-popup-link" href="#pop-up-menu" title="Контакты"></a>
+					</li>
+					<li class="b-btn-list__item">
+						<a class="b-btn-round b-btn-round--vk" href="#" title="Группа ВКонтакте"></a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</header><!-- .b-header -->
+
+		<main class="l-main">
+            <aside class="l-main-sidebar">
+                <div class="filter-tour filter-tour-mobile club-form">
+                    <div class="filter-tour-inner shadow-block-inner">
+                        <div class="filter-tour-inner-content shadow-block-inner-content">
+                    <form>
+                        <label>
+                            <div class="styled-select">
+                            <select>
+                                <option>Страна</option>
+                                <option>Египет</option>
+                                <option>Турция</option>
+                                <option>Греция</option>
+                            </select>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Дата вылета" id="datepicker">
+                        </label>
+                        <label>
+                            <div class="styled-select">
+                            <select>
+                                <option>Ночей</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                                </div>
+                        </label>
+                        <label class="person-count">
+                            <span class="person-count-title">взрослых:</span>
+                            <span class="person-count-controls">
+                                <span class="person-count-control __1" data-value="1"></span>
+                                <span class="person-count-control __2" data-value="2"></span>
+                                <span class="person-count-control __3" data-value="3"></span>
+                                <span class="person-count-control __4" data-value="4"></span>
+                                <input type="hidden" class="person-count-input" name="person-count" value="">
+                            </span>
+                        </label>
+
+                        <label class="person-count person-count--children">
+                            <span class="person-count-title">детей:</span>
+                            <span class="person-count-clear">без детей</span>
+                            <span class="person-count-controls">
+                                <span class="person-count-control __1" data-value="1"></span>
+                                <span class="person-count-control __2" data-value="2"></span>
+                                <span class="person-count-control __3" data-value="3"></span>
+                                <input type="hidden" class="person-count-input" name="children-person-count" value="">
+                            </span>
+                        </label>
+
+                        <label class="age-children">
+                            <span class="age-children-title">возраст детей:</span>
+
+                            <span class="age-children-controls">
+                                <div class="styled-select">
+                                <select name="age-children-1" data-id="1">
+                                    <option value="0">Лет</option>
+                                    <option value="<2"><2</option>
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                </select>
+                                    </div>
+                                <div class="styled-select">
+                                <select name="age-children-2" data-id="2">
+                                    <option value="0">Лет</option>
+                                    <option value="<2"><2</option>
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                </select>
+                                    </div>
+                                <div class="styled-select">
+                                <select name="age-children-3" data-id="3">
+                                    <option value="0">Лет</option>
+                                    <option value="<2"><2</option>
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                </select>
+                                    </div>
+                            </span>
+                        </label>
+
+                        <label>
+                            <div class="styled-select">
+                            <select>
+                                <option>Класс отеля</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                                </div>
+                        </label>
+                        <div class="btn-orange filter-tour-btn">Подобрать тур</div>
+                    </form>
+                </div>
+                </div>
+                </div>
+                <div class="select-country">
+
+                    <div class="select-country-control shadow-block">
+                        <div class="select-country-control-inner shadow-block-inner">
+                            <div class="select-country-control-inner-content shadow-block-inner-content">
+                                <div class="select-country-control-inner-content-text">
+                                    Я хочу подобрать страну!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select-country-country-list">
+                        <div class="name-list">
+                            <div class="name-list-item" data-picture="img/select-country-egypt.png">Бразилия</div>
+                            <div class="name-list-item" data-picture="img/select-country-egypt1.png">Греция</div>
+                            <div class="name-list-item" data-picture="img/select-country-egypt.png">Египет</div>
+                            <div class="name-list-item" data-picture="img/select-country-egypt1.png">Таиланд</div>
+                            <div class="name-list-item" data-picture="img/select-country-egypt.png">Тунис</div>
+                            <div class="name-list-item" data-picture="img/select-country-egypt1.png">Турци</div>
+                            <div class="name-list-item" data-picture="img/select-country-egypt.png">Шри-Ланка</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <ul class="b-btn-list b-btn-list--select-country-page">
+
+                    <li class="b-btn-list__item">
+                        <a class="b-btn-round b-btn-round--heart" href="#" title=""></a>
+                    </li>
+                    <li class="b-btn-list__item">
+                        <a class="b-btn-round b-btn-round--mail open-popup-link" href="#pop-up-mail" title=""></a>
+                    </li>
+                    <li class="b-btn-list__item">
+                        <a class="b-btn-round b-btn-round--phone open-popup-link" href="#pop-up-phone" title="Включить звук"></a>
+                    </li>
+
+                </ul>
+            </aside>
+            <div class="l-main-content">
+
+            </div>
+		</main><!-- .l-main -->
+
+	</div><!-- .l-page -->
+
+    <script src="js/vendor/cesium/Cesium.js"></script>
+    <style>
+        @import url(js/vendor/cesium/Widgets/widgets.css);
+        #cesiumContainer,
+        #loadingOverlay{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .cesium-widget-credits{
+            display: none;
+        }
+    </style>
+
+    <div id="cesiumContainer"></div>
+    <script>
+        if ($(window).width() > '480') {
+
+            var viewer = new Cesium.Viewer('cesiumContainer', {
+                fullscreenButton: false,
+                timeline: false,
+                navigationHelpButton: false,
+                navigationInstructionsInitiallyVisible: false,
+                homeButton: false,
+                geocoder: false,
+                sceneModePicker: false,
+                baseLayerPicker: false,
+                animation: false
+            });
+
+        }else{
+            $( "#datepicker" ).datepicker();
+        }
+    </script>
+
+</body>
+
+</html>

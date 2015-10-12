@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+<html lang="ru" class="index-page">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>Главная страница — Клуб путешествий</title>
+
+	<link rel="shortcut icon" href="favicon.png">
+	
+	<!-- Reset styles -->
+	<link rel="stylesheet" href="css/normalize.css"> 
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!-- Plugins' styles -->
+	<link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+	<link rel="stylesheet" href="js/vendor/magnific-popup/magnific-popup.min.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+	<!-- Main styles -->
+	<link rel="stylesheet" href="template_styles.css">
+
+	<!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
+	
+	<!-- Scripts -->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/fastclick.min.js"></script>
+	<script src="js/vendor/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="js/vendor/jquery-maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+	<script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/vendor/select-or-die/selectordie.min.js"></script>
+	<script src="js/vendor/jquery-validation/jquery.validate.min.js"></script>
+	<script src="js/vendor/jquery-validation/localization/messages_ru.js"></script>
+	<script src="js/vendor/jquery.vide.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+	<div class="l-page">
+
+        <div class="pop-up-menu pop-up-modal" id="pop-up-menu">
+            <div class="grid-container">
+
+                <div class="grid">
+                    <div class="anim"></div>
+                </div>
+
+            </div>
+            <!-- /.grid-container -->
+
+            <div class="window">
+
+                <div class="close mfp-close"></div>
+                <div class="logo"></div>
+                <div class="tel">т. +7 (8182) 53-33-03</div>
+                <span>адрес: г.Архангельск, ул. Карла-Маркса, д. 20а</span>
+
+            </div>
+        </div>
+        <!-- /.pop-up-menu -->
+
+		<header class="b-header">
+
+			<div class="b-header__left">
+
+				<a class="b-logo" href="/"></a>
+
+				<div class="b-header__info b-header__info--home">
+
+					<div class="b-header__phone">
+						+7 (8182) 53-33-03
+					</div>
+
+					<div class="b-header__location">
+						адрес: г. Архангельск, <br>
+						ул. Карла-Маркса, д. 20а
+					</div>
+
+				</div>
+				
+			</div><!-- .b-header__left -->
+
+			<div class="b-header__right">
+
+				<ul class="b-btn-list">
+
+					<li class="b-btn-list__item">
+						<a class="b-btn-round b-btn-round--menu open-popup-link" href="#pop-up-menu" title="Контакты"></a>
+					</li>
+					<li class="b-btn-list__item">
+						<a class="b-btn-round b-btn-round--vk" href="#" title="Группа ВКонтакте"></a>
+					</li>
+					<li class="b-btn-list__item">
+						<a class="b-btn-round b-btn-round--sound js-bg-audio__mute" href="#" title="Выключить звук"></a>
+					</li>
+					
+				</ul>
+
+			</div>
+			
+		</header><!-- .b-header -->
+
+		<main class="l-main">
+
+			<div class="b-ask">
+
+				<div class="b-ask__text">
+					Хочешь <br> отдохнуть?
+				</div>
+
+				<div class="b-ask__phones">
+					<span>+7 (8184) 53-33-03;</span>
+					<span>+7 (911) 871-05-05</span>
+				</div>
+
+				<div class="b-ask__buttons">
+					<a class="b-btn-ask b-btn-ask--yes" href="select-country.html"><span class="b-btn-ask--text">Да!</span></a>
+					<a class="b-btn-ask b-btn-ask--no" href="no.html"><span class="b-btn-ask--text">Нет.</span></a>
+				</div>
+				
+			</div><!-- .b-ask -->
+			
+		</main><!-- .l-main -->
+
+		<div class="b-bg-media">
+			<video class="b-bg-media__video js-bg-video" loop muted autoplay poster="media/yes-cover.jpg" src="media/yes.mp4"></video>
+			<audio class="js-bg-audio" loop autoplay src="media/yes.mp3"></audio>
+		</div>
+		
+	</div><!-- .l-page -->
+
+</body>
+
+</html>

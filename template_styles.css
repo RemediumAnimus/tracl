@@ -42,7 +42,14 @@
 }
 html {
   -ms-overflow-style: scrollbar;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
+}
+@media all and (min-width: 980px) {
+  html {
+    height: 100%;
+    min-height: auto;
+  }
 }
 html.inner-page {
   height: auto;
@@ -62,10 +69,10 @@ body {
   z-index: 1;
   height: 100%;
   background: url("media/yes-cover.jpg") no-repeat center center;
-  /*-webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
   background-position: 50% 50%;
 }
 body.page-no {

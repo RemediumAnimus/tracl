@@ -17,6 +17,14 @@ $(document).ready(function(){
 	$('input[type=tel]').on('change keyup paste', function(){
 		$(this).removeClass('ie-tel');
 	});
+	$(".video").vide('media/yes.mp4', {
+        muted: false,
+    });
+    $(".video.no").vide('media/no.mp4', {
+        muted: false,
+    });
+	var video = $(".video").data('vide');
+	var video1 = $(".no").data('vide');
 
 	// form validation
 	$('.js-form-validate').validate({

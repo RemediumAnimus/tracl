@@ -68,6 +68,9 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
   background: url("media/yes-cover.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -764,7 +767,7 @@ body.page-no .b-btn-round--sound:after {
   overflow: hidden;
 }
 .b-bg-media__video {
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
   position: absolute;
   top: 0;
@@ -1374,6 +1377,12 @@ body.page-no .b-btn-round--sound:after {
   bottom: 0;
   margin: auto;
   z-index: 2;
+  display: none;
+}
+@media all and (min-width: 800px) {
+  .country-change {
+    display: block;
+  }
 }
 .country-change-prev {
   background: url("img/country-prev.png") no-repeat left top;

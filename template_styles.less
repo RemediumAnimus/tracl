@@ -39,6 +39,9 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
 
   //overflow-x: hidden;
   //overflow-y: auto;
@@ -816,7 +819,7 @@ body {
   overflow: hidden;
 
   &__video {
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
     position: absolute;
     top: 0;
@@ -1460,6 +1463,10 @@ body {
   bottom: 0;
   margin: auto;
   z-index: 2;
+  display: none;
+  @media all and (min-width: 800px) {
+    display: block;
+  }
 
   &-prev {
     background: url("img/country-prev.png") no-repeat left top;

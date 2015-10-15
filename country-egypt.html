@@ -172,28 +172,106 @@
 
 		<main class="l-main">
             <aside class="l-main-sidebar">
-                <div class="filter-tour club-form shadow-block">
+                <div class="filter-tour  club-form">
                     <div class="filter-tour-inner shadow-block-inner">
                         <div class="filter-tour-inner-content shadow-block-inner-content">
-                            <label>
-                                <input type="text" placeholder="Количество взрослых:  5">
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Количество детей:  2">
-                            </label>
-                            <label>
-                                <select>
-                                    <option>Египет</option>
-                                    <option>Турция</option>
-                                    <option>Греция</option>
-                                </select>
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Ваш номер телефона"></label>
+                    <form>
+                        <label>
+                            <div class="styled-select">
+                            <select>
+                                <option>Страна</option>
+                                <option>Египет</option>
+                                <option>Турция</option>
+                                <option>Греция</option>
+                            </select>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Дата вылета" id="datepicker">
+                        </label>
+                        <label>
+                            <div class="styled-select">
+                            <select>
+                                <option>Ночей</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                                </div>
+                        </label>
+                        <label class="person-count">
+                            <span class="person-count-title">взрослых:</span>
+                            <span class="person-count-controls">
+                                <span class="person-count-control __1" data-value="1"></span>
+                                <span class="person-count-control __2" data-value="2"></span>
+                                <span class="person-count-control __3" data-value="3"></span>
+                                <span class="person-count-control __4" data-value="4"></span>
+                                <input type="hidden" class="person-count-input" name="person-count" value="">
+                            </span>
+                        </label>
 
-                            <div class="btn-orange filter-tour-btn">Подобрать тур</div>
-                        </div>
-                    </div>
+                        <label class="person-count person-count--children">
+                            <span class="person-count-title">детей:</span>
+                            <span class="person-count-clear">без детей</span>
+                            <span class="person-count-controls">
+                                <span class="person-count-control __1" data-value="1"></span>
+                                <span class="person-count-control __2" data-value="2"></span>
+                                <span class="person-count-control __3" data-value="3"></span>
+                                <input type="hidden" class="person-count-input" name="children-person-count" value="">
+                            </span>
+                        </label>
+
+                        <label class="age-children">
+                            <span class="age-children-title">возраст детей:</span>
+
+                            <span class="age-children-controls">
+                                <div class="styled-select">
+                                <select name="age-children-1" data-id="1">
+                                    <option value="0">Лет</option>
+                                    <option value="<2"><2</option>
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                </select>
+                                    </div>
+                                <div class="styled-select">
+                                <select name="age-children-2" data-id="2">
+                                    <option value="0">Лет</option>
+                                    <option value="<2"><2</option>
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                </select>
+                                    </div>
+                                <div class="styled-select">
+                                <select name="age-children-3" data-id="3">
+                                    <option value="0">Лет</option>
+                                    <option value="<2"><2</option>
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                </select>
+                                    </div>
+                            </span>
+                        </label>
+
+                        <label>
+                            <div class="styled-select">
+                            <select>
+                                <option>Класс отеля</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                                </div>
+                        </label>
+                        <div class="btn-orange filter-tour-btn">Подобрать тур</div>
+                    </form>
+                </div>
+                </div>
                 </div>
                 <ul class="b-btn-list">
 

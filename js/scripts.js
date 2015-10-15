@@ -266,12 +266,12 @@ $(document).ready(function(){
         if (grid.ready) {
             $('.pop-up-modal .anim').removeClass('transform-done');
         }
-        if ($('html').height()<600) {
+        /*if ($('html').height()<600) {
             $('body').css('height','600px');
         }
         else if ($('html').height()>600){
             $('body').css('height','100%');
-        }
+        }*/
     });
 
     $(".stock-item-btn").on("click", function (e) {

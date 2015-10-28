@@ -1129,19 +1129,18 @@ body.page-no .b-btn-round--sound:after {
   overflow: hidden;
   margin: 0 15px 15px 0;
   background-color: transparent;
-  width: 31%;
+  width: 24%;
   height: auto;
   max-width: 473px;
-  min-width: 389px;
 }
 @media all and (max-width: 1685px) {
   .stock-list .stock-item {
-    width: 50%;
+    width: 23%;
   }
 }
 @media all and (max-width: 1450px) {
   .stock-list .stock-item {
-    width: 45%;
+    width: 23%;
     min-width: 340px;
   }
 }

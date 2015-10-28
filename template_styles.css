@@ -192,6 +192,14 @@ body.page-no .b-btn-round--sound:after {
   float: left !important;
   margin-right: 18px !important;
 }
+.l-main-sidebar--actions {
+  display: block;
+}
+@media all and (min-width: 800px) {
+  .l-main-sidebar--actions {
+    display: none;
+  }
+}
 .l-main-content {
   /*min-height: 200px;*/
   margin-left: 413px;
@@ -215,6 +223,10 @@ body.page-no .b-btn-round--sound:after {
   .l-main-content-title .b-page-title {
     margin: 10px 0 10px 0 !important;
   }
+}
+.l-main-content--actions {
+  margin-left: 0;
+  padding-top: 20px;
 }
 .b-header {
   padding-top: 20px;
@@ -240,6 +252,53 @@ body.page-no .b-btn-round--sound:after {
     margin-top: 10px;
   }
 }
+.b-header__right--actions {
+  width: auto;
+  position: relative;
+  padding-left: 0px;
+  width: 70%;
+  float: right;
+  right: 0;
+}
+@media all and (min-width: 479px) {
+  .b-header__right--actions {
+    width: auto;
+    position: absolute;
+    padding-left: 140px;
+    right: 0;
+  }
+}
+@media all and (min-width: 800px) {
+  .b-header__right--actions {
+    position: relative;
+    width: 25%;
+    padding-left: 0;
+  }
+}
+@media all and (min-width: 979px) {
+  .b-header__right--actions {
+    width: auto;
+  }
+}
+.b-header__right--actions li {
+  float: right;
+  margin-left: 5px;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+@media all and (min-width: 479px) {
+  .b-header__right--actions li {
+    float: right;
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+}
+@media all and (min-width: 979px) {
+  .b-header__right--actions li {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+}
 .b-header__info {
   color: #fff;
   font-family: 'BlissPro', Arial, sans-serif;
@@ -254,6 +313,14 @@ body.page-no .b-btn-round--sound:after {
 @media (min-width: 480px) and (max-width: 979px) {
   .b-header__info--home {
     display: block;
+  }
+}
+.b-header__info--actions {
+  padding-top: 50px;
+}
+@media all and (min-width: 740px) {
+  .b-header__info--actions {
+    padding-top: 0;
   }
 }
 .b-header__phone {
@@ -288,10 +355,15 @@ body.page-no .b-btn-round--sound:after {
   position: relative;
   border-radius: 10px;
   float: left;
-  margin-left: 61px;
+  margin-left: 31px;
   letter-spacing: 1px;
   margin-top: 37px;
   display: inline-block;
+}
+@media all and (min-width: 979px) {
+  .b-page-title--actions {
+    margin-left: 61px;
+  }
 }
 .b-page-title-inner {
   padding: 5px 6px;
@@ -1244,6 +1316,12 @@ body.page-no .b-btn-round--sound:after {
   border-radius: 15px;
   background-clip: padding-box;
   -webkit-background-clip: padding-box;
+  display: block;
+}
+@media all and (min-width: 800px) {
+  .filter-tour {
+    display: none;
+  }
 }
 .filter-tour-inner-content {
   padding: 10px;

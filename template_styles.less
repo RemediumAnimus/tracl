@@ -189,7 +189,14 @@ body {
       }
 
     }
-  }
+
+    &--actions {
+      display: block;
+      @media all and (min-width: 800px) {
+        display: none;
+      }
+    }
+  }//sidebar
 
   &-content {
     /*min-height: 200px;*/
@@ -214,7 +221,15 @@ body {
         }
       }
     }
-  }
+
+    &--actions {
+      margin-left: 0;
+      padding-top: 20px;
+      @media all and (min-width: 800px) {
+
+      }
+    }
+  }//content
 }
 
 // block elements
@@ -241,6 +256,45 @@ body {
     @media all and (max-width: 479px) {
       margin-top: 10px;
     }
+
+    &--actions {
+      width: auto;
+      position: relative;
+      padding-left: 0px;
+      width: 70%;
+      float: right;
+      right: 0;
+      @media all and (min-width: 479px) {
+        width: auto;
+        position: absolute;
+        padding-left: 140px;
+        right: 0;
+      }
+      @media all and (min-width: 800px) {
+        position: relative;
+        width: 25%;
+        padding-left: 0;
+      }
+      @media all and (min-width: 979px) {
+        width: auto;
+      }
+      li {
+        float: right;
+        margin-left: 5px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        @media all and (min-width: 479px) {
+          float: right;
+          margin-left: 5px;
+          margin-right: 0px;
+        }
+        @media all and (min-width: 979px) {
+          margin-left: 0;
+          margin-right: 8px;
+        }
+      }
+
+    }
   }
 
   &__info {
@@ -258,6 +312,13 @@ body {
         display: block;
       }
 
+    }
+
+    &--actions {
+      padding-top: 50px;
+      @media all and (min-width: 740px) {
+        padding-top: 0;
+      }
     }
 
   }
@@ -296,10 +357,16 @@ body {
   position: relative;
   border-radius: 10px;
   float: left;
-  margin-left: 61px;
+  margin-left: 31px;
   letter-spacing: 1px;
   margin-top: 37px;
   display: inline-block;
+
+  &--actions {
+    @media all and (min-width: 979px) {
+      margin-left: 61px;
+    }
+  }
 
   &-inner {
     padding: 5px 6px;
@@ -1320,6 +1387,11 @@ body {
   border-radius: 15px;
   background-clip:padding-box;
   -webkit-background-clip:padding-box;
+  display: block;
+
+  @media all and (min-width: 800px) {
+    display: none;
+  }
 
   &-inner{
 

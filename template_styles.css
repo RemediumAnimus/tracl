@@ -83,26 +83,29 @@ body {
 body.page-no {
   background-image: url("media/no-cover.jpg");
   background-size: cover;
-}
-@media all and (min-width: 481px) {
-  body.page-no .b-btn-round {
-    background-color: transparent;
-    border: 1px solid #ffffff;
-  }
-}
-@media all and (min-width: 481px) {
-  body.page-no .b-btn-round--menu {
-    background-image: url('img/ico/menu-white.svg');
-  }
-}
-body.page-no .b-btn-round--sound {
-  background-image: url('img/ico/sound-white.svg');
-}
-body.page-no .b-btn-round--sound:before {
-  background: #fff;
-}
-body.page-no .b-btn-round--sound:after {
-  background: #fff;
+  /*.b-btn-round {
+
+      @media all and (min-width: 481px) {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 1);
+      }
+
+      &--menu {
+        @media all and (min-width: 481px) {
+          background-image: url('img/ico/menu-white.svg');
+        }
+      }
+      &--sound {
+        background-image: url('img/ico/sound-white.svg');
+
+        &:before {
+          background: #fff;
+        }
+        &:after {
+          background: #fff;
+        }
+      }
+    }*/
 }
 @media all and (max-width: 480px) {
   body.page-no {

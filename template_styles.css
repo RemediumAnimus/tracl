@@ -193,7 +193,7 @@ body.page-no .b-btn-round--sound:after {
   margin-right: 18px !important;
 }
 .l-main-sidebar--actions {
-  display: block;
+  display: none;
 }
 @media all and (min-width: 800px) {
   .l-main-sidebar--actions {

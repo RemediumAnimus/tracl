@@ -548,8 +548,10 @@ body.page-no {
     bottom: 0;
     width: 100%;
     margin: auto;
-    height: 590px;
+    height: auto;
     padding: 0;
+    padding-top: 200px;
+    overflow: auto;
   }
 }
 @media all and (max-width: 479px) {

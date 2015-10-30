@@ -233,7 +233,13 @@ body.page-no {
 }
 .l-main-content--actions {
   margin-left: 0;
-  padding-top: 20px;
+  padding-top: 0px;
+  margin-top: -10px;
+}
+@media all and (min-width: 800px) {
+  .l-main-content--actions {
+    margin-top: 0;
+  }
 }
 .b-header {
   padding-top: 20px;
@@ -548,10 +554,8 @@ body.page-no {
     bottom: 0;
     width: 100%;
     margin: auto;
-    height: auto;
+    height: 590px;
     padding: 0;
-    padding-top: 200px;
-    overflow: auto;
   }
 }
 @media all and (max-width: 479px) {

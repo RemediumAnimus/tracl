@@ -130,7 +130,7 @@ $(document).ready(function(){
     var mailBtn = $('.b-btn-round--mail');
     var phoneBtn = $('.b-btn-round--phone');
 
-    if ($(window).width() > '480') {
+    /*if ($(window).width() > '480') {*/
         menuBtn.on('click', function (e) {
             e.preventDefault();
 
@@ -160,14 +160,14 @@ $(document).ready(function(){
             grid.removeGrid();
             $(this).closest(".pop-up-modal").removeClass("active");
         });
-    }else{
+    /*}else{
         //popup окна на мобильных
 
-        $('.open-popup-link').magnificPopup({
+        /*$('.open-popup-link').magnificPopup({
             type:'inline',
             midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-        });
-    }
+        });*/
+    /*}*/
 
 
 

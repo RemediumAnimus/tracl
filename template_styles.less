@@ -16,6 +16,9 @@ html {
   height: 100%;
   min-height: auto;
   height: 100%;
+  //min-height: 100%;
+  height: auto;
+  height: 100%;
 
   @media all and (min-width: 980px) {
     height: 100%;
@@ -38,6 +41,26 @@ html {
   }
 }
 
+.n-h {
+  height: 100%;
+}
+
+.n-m {
+  min-height: 100%;
+}
+
+.n-r {
+  position: static;
+}
+
+.n-b {
+  background-size: auto;
+}
+
+.n-b-h {
+  background: none;
+}
+
 body {
   min-width: 320px;
   background: #fff;
@@ -45,10 +68,11 @@ body {
   color: #4a4a4a;
   position: relative;
   z-index: 1;
-  height: 100%;
+  //height: 100%;
   //position: absolute;
   left: 0;
   right: 0;
+  height: auto;
 
   //overflow-x: hidden;
   //overflow-y: auto;
@@ -157,6 +181,8 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 25px;
+  position: relative;
+  min-height: 100%;
 
   @media all and (max-width: @mq-large) {
     padding: 0 7px;
@@ -171,6 +197,7 @@ body {
 .l-main {
   clear: both;
   padding-top: 25px;
+  //height: 600px;
   //overflow: hidden;
 
   &-sidebar {
@@ -240,6 +267,15 @@ body {
     }
   }//content
 }
+
+.n-main-mod {
+  height: auto;
+
+  @media all and (min-width: 980px) {
+    height: 600px;
+  }
+}
+
 
 // block elements
 .b-header {
@@ -907,13 +943,14 @@ body {
 
 .b-bg-media {
   width: 100%;
-  height: 100%;
+  //height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   line-height: 0;
   overflow: hidden;
+  bottom: 0;
 
   &__video {
     width: 100%;

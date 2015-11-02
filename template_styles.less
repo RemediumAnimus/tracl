@@ -41,6 +41,14 @@ html {
   }
 }
 
+.n-bg {
+
+  @media all and (max-width: 480px) {
+    background: url("@{img-path}/kos.png") !important;
+    background-size: cover !important;
+  }
+}
+
 .n-h {
   height: 100%;
 }
@@ -230,6 +238,10 @@ body {
       @media all and (min-width: 800px) {
         display: none;
       }
+    }
+
+    &--ov {
+      overflow: visible;
     }
   }//sidebar
 
@@ -1714,7 +1726,7 @@ body {
     @media all and (max-width: 1012px) {
       float: none;
       left: 0;
-      top: 90px;
+      top: 80px;
       z-index: 1;
     }
 

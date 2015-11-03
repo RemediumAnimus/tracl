@@ -195,6 +195,9 @@ body.page-no {
     padding: 0 7px;
   }
 }
+.l-page--mod {
+  padding-bottom: 0 !important;
+}
 .l-main {
   clear: both;
   padding-top: 25px;
@@ -278,11 +281,6 @@ body.page-no {
 }
 .n-main-mod {
   height: auto;
-}
-@media all and (min-width: 980px) {
-  .n-main-mod {
-    height: 600px;
-  }
 }
 .b-header {
   padding-top: 20px;

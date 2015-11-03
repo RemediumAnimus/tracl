@@ -140,9 +140,6 @@ body.page-no {
   }
 }
 @media all and (max-width: 480px) {
-  body {
-    background-position-x: right;
-  }
   body .b-bg-media {
     display: none;
   }
@@ -201,6 +198,11 @@ body.page-no {
   clear: both;
   padding-top: 25px;
 }
+.l-main:after {
+  display: block;
+  content: '';
+  clear: both;
+}
 .l-main-sidebar {
   width: 390px;
   min-height: 200px;
@@ -233,6 +235,11 @@ body.page-no {
 }
 .l-main-sidebar--ov {
   overflow: visible;
+}
+@media all and (max-width: 799px) {
+  .l-main-sidebar--hide {
+    display: none;
+  }
 }
 .l-main-content {
   /*min-height: 200px;*/
@@ -407,6 +414,7 @@ body.page-no {
   letter-spacing: 1px;
   margin-top: 37px;
   display: inline-block;
+  z-index: 2;
 }
 @media all and (min-width: 979px) {
   .b-page-title--actions {
@@ -437,6 +445,9 @@ body.page-no {
   color: #000;
   position: relative;
   z-index: 2;
+}
+.b-page-title--mod {
+  margin-top: 25px;
 }
 .b-btn-list__item {
   float: right;
@@ -570,7 +581,7 @@ body.page-no {
     background-size: auto 15px;
   }
   .b-btn-round--heart {
-    background-size: auto 15px;
+    background-size: auto 22px;
   }
   .b-btn-round--phone {
     background-size: auto 15px;
@@ -1674,6 +1685,38 @@ body.page-no {
     display: none;
   }
 }
+.select-country--mod {
+  display: block;
+  z-index: 12;
+}
+.select-country--mod .select-country-control {
+  max-width: 100%;
+  position: relative;
+}
+.select-country--mod .select-country-control:after {
+  display: block;
+  content: '';
+  width: 5px;
+  height: 24px;
+  background: url("img/arb.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 35px;
+}
+.select-country--mod .select-country-country-list {
+  width: 100%;
+}
+.select-country--mod .name-list {
+  width: 100%;
+}
+.select-country--mod .name-list-item {
+  border-bottom: 1px solid #d1d1d1;
+  font-size: 24px;
+  padding: 14px 0px 16px 0px;
+  margin: 0px 15px;
+}
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -1732,4 +1775,147 @@ body.page-no {
   width: 97% !important;
   right: 0 !important;
   margin: auto !important;
+}
+.n-bttn {
+  border-radius: 10px;
+  height: 36px;
+  display: block;
+  margin-bottom: 12px;
+  background: #ec772f;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ec772f 0%, #bc4c1c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ec772f), color-stop(100%, #bc4c1c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ec772f 0%, #bc4c1c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ec772f 0%, #bc4c1c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ec772f 0%, #bc4c1c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ec772f 0%, #bc4c1c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec772f', endColorstr='#bc4c1c', GradientType=0);
+  position: relative;
+}
+.n-bttn:after {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 5px;
+  background: url("img/ars.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 10px;
+}
+.n-bttn:hover {
+  background: -moz-linear-gradient(top, #ea8144 0%, #ba5c34 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ea8144), color-stop(100%, #ba5c34));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ea8144 0%, #ba5c34 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ea8144 0%, #ba5c34 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ea8144 0%, #ba5c34 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ea8144 0%, #ba5c34 100%);
+  /* W3C */
+}
+.n-bttn span {
+  color: #fff;
+  padding-left: 20px;
+  font-family: 'BlissPro', Arial, sans-serif;
+  line-height: 36px;
+}
+.n-main__block {
+  text-align: center;
+  margin-bottom: 5px;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+.n-main__block--mod {
+  z-index: 20;
+  margin-bottom: 10px;
+}
+.n-main__block--mod .select-country {
+  margin-top: 0;
+}
+.n-main__block--mod .select-country-country-list:hover {
+  padding-right: 0;
+}
+@media all and (min-width: 800px) {
+  .n-main__block {
+    display: none;
+  }
+}
+.n-main__block__button {
+  margin-top: 20px;
+  display: block;
+  background-size: cover;
+  height: 70px;
+  border-radius: 15px;
+  background: #fddccb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fddccb 0%, #fb7c21 8%, #ae3b0c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fddccb), color-stop(8%, #fb7c21), color-stop(100%, #ae3b0c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fddccb 0%, #fb7c21 8%, #ae3b0c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fddccb 0%, #fb7c21 8%, #ae3b0c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fddccb 0%, #fb7c21 8%, #ae3b0c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fddccb 0%, #fb7c21 8%, #ae3b0c 100%);
+  /* W3C */
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.n-main__block__button:hover {
+  background: -moz-linear-gradient(top, #fddccb 0%, #f98e40 8%, #ad471f 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fddccb), color-stop(8%, #f98e40), color-stop(100%, #ad471f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fddccb 0%, #f98e40 8%, #ad471f 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fddccb 0%, #f98e40 8%, #ad471f 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fddccb 0%, #f98e40 8%, #ad471f 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fddccb 0%, #f98e40 8%, #ad471f 100%);
+  /* W3C */
+}
+@media all and (min-width: 800px) {
+  .n-main__block__button {
+    display: none;
+  }
+}
+.n-main__block__button:after {
+  display: block;
+  content: '';
+  width: 48px;
+  height: 42px;
+  background: url("img/wing.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 10px;
+}
+@media all and (max-width: 400px) {
+  .n-main__block__button:after {
+    display: none;
+  }
+}
+.n-main__block__button span {
+  color: #fff;
+  line-height: 70px;
+  font-size: 36px;
+  text-transform: uppercase;
 }

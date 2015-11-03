@@ -191,6 +191,7 @@ body {
   padding: 0 25px;
   position: relative;
   min-height: 100%;
+  padding-bottom: 10px !important;
 
   @media all and (max-width: @mq-large) {
     padding: 0 7px;
@@ -623,7 +624,7 @@ body {
     }
 
     &--heart {
-      background-size: auto 22px;
+      background-size: auto 25px;
     }
 
     &--phone {
@@ -1846,6 +1847,16 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+
+  &--mod {
+    background: url("@{img-path}/egypt.png") 30% 50%;
+
+    .swiper-wrapper {
+      @media all and (max-width: 799px) {
+        display: none;
+      }
+    }
+  }
 }
 
 .swiper-slide {
@@ -2016,9 +2027,6 @@ body {
       bottom: 0;
       margin: auto;
       right: 10px;
-      @media all and (max-width:400px) {
-        display: none;
-      }
     }
 
     span {
@@ -2026,6 +2034,11 @@ body {
       line-height: 70px;
       font-size: 36px;
       text-transform: uppercase;
+
+      @media all and (max-width:400px) {
+        font-size: 30px;
+        padding-right: 35px;
+      }
     }
   }
 }

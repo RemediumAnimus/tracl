@@ -1705,6 +1705,11 @@ body.page-no {
   margin: auto;
   right: 35px;
 }
+@media all and (max-width: 360px) {
+  .select-country--mod .select-country-control:after {
+    display: none;
+  }
+}
 .select-country--mod .select-country-country-list {
   width: 100%;
 }
